@@ -24,7 +24,7 @@ const links = [
 </script>
 
 <template>
-  <header class="text-primary-light py-5">
+  <header class="text-primary-light py-8">
     <AppContainer>
       <div class="flex items-center justify-between">
         <a class="font-bold text-lg flex mr-10" href="#">Akramjon.Dev</a>
@@ -33,8 +33,9 @@ const links = [
             <RouterLink :to="link.path">{{ link.name }}</RouterLink>
           </li>
         </ul>
-        <RouterLink to="/search">
-          <span>Search</span>
+        <RouterLink class="text-white flex items-center gap-1" to="/search">
+          <IconsSearch class="w-5" />
+          <span>Search (⌘K)</span>
         </RouterLink>
       </div>
     </AppContainer>

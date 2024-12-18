@@ -1,6 +1,7 @@
 <template>
   <div class="bg-black">
     <TheHeader />
+    <AppHero />
     <NuxtRouteAnnouncer />
     <NuxtWelcome />
   </div>
