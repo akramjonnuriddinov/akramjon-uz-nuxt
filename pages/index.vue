@@ -1,3 +1,6 @@
 <template>
-  <div>Home</div>
+  <AppHero />
+  <LatestPost />
+  <NuxtRouteAnnouncer />
+  <NuxtWelcome />
 </template>

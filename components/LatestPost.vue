@@ -57,7 +57,7 @@ const posts = [
 </script>
 
 <template>
-  <section class="text-primary-light">
+  <section>
     <AppContainer>
       <h2 class="text-2xl font-semibold mb-2">📝 Latest Posts</h2>
 

@@ -25,7 +25,7 @@ const components = [
 </script>
 
 <template>
-  <section class="text-primary-light py-20">
+  <section class="py-20">
     <AppContainer>
       <h1 class="text-4xl font-bold mb-8">👋 Hi there! I'm Akramjon.</h1>
       <p class="mb-4">
