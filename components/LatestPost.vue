@@ -61,7 +61,7 @@ const posts = [
     <AppContainer>
       <h2 class="text-2xl font-semibold mb-2">📝 Latest Posts</h2>
 
-      <ul class="flex flex-col mb-4">
+      <ul class="flex flex-col">
         <li
           v-for="post in posts"
           :key="post.title"
@@ -76,7 +76,7 @@ const posts = [
         </li>
       </ul>
       <div
-        class="flex justify-center transition-opacity duration-100 hover:opacity-80"
+        class="flex mt-10 mb-20 justify-center transition-opacity duration-100 hover:opacity-80"
       >
         <RouterLink to="/posts" class="flex items-center gap-2"
           >📚 All Posts
