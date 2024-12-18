@@ -2,6 +2,7 @@
   <div class="bg-black">
     <TheHeader />
     <AppHero />
+    <LatestPost />
     <NuxtRouteAnnouncer />
     <NuxtWelcome />
   </div>
