@@ -13,5 +13,6 @@ onMounted(() => {
   >
     <TheHeader />
     <NuxtPage />
+    <AppFooter />
   </div>
 </template>
