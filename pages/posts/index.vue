@@ -1,3 +1,9 @@
+<script setup lang="ts">
+useSeoMeta({
+  title: "Posts | Akramjon.N",
+})
+</script>
+
 <template>
   <AppContainer>
     <AppBreadcrump breadCrump="Posts (page 1)" />

@@ -1,3 +1,9 @@
+<script setup lang="ts">
+useSeoMeta({
+  title: "Search | Akramjon.N",
+})
+</script>
+
 <template>
   <AppContainer>
     <AppBreadcrump bread-crump="Search" />
