@@ -6,26 +6,26 @@ const projects = [
     title: "NamMQI",
     description: "Namangan Muhandislik Qurilish Instituti",
     link: "https://nammqi-v2.netlify.app/",
-    icon: "/images/teamly.png",
+    icon: "/images/1.png",
   },
   {
     title: "NamMQI Schedule",
     description: "Dars jadvali",
     link: "https://nammqi-schedule.netlify.app/",
-    icon: "/images/teamly.png",
+    icon: "/images/2.png",
   },
   {
     title: "Teamly.uz",
     description: "Shaping Digital Dreams",
     link: "https://teamly.netlify.app/",
-    icon: "/images/teamly.png",
+    icon: "/images/3.png",
   },
   {
     title: "Uz Pharm Forum",
     description:
       "This project for improve my coding and problem solving skills.",
     link: "https://akramjon-uzpharm.netlify.app/",
-    icon: "/images/uzpharm.png",
+    icon: "/images/4.png",
   },
 ]
 </script>
@@ -45,7 +45,11 @@ const projects = [
           class="flex items-end justify-between group"
         >
           <div class="max-w-lg">
-            <h3>{{ project.title }}</h3>
+            <h3
+              class="group-hover:text-primary-green transition-colors duration-100"
+            >
+              {{ project.title }}
+            </h3>
             <p class="text-sm text-gray-500">
               {{ project.description }}
             </p>
