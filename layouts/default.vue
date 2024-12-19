@@ -9,7 +9,7 @@ onMounted(() => {
 
 <template>
   <div
-    class="bg-primary-light text-primary-dark dark:bg-black dark:text-primary-light"
+    class="min-h-screen bg-primary-light text-primary-dark dark:bg-black dark:text-primary-light"
   >
     <TheHeader />
     <NuxtPage />
