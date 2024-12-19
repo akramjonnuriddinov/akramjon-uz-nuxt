@@ -9,10 +9,10 @@ onMounted(() => {
 
 <template>
   <div
-    class="min-h-screen bg-primary-light text-primary-dark dark:bg-black dark:text-primary-light"
+    class="flex flex-col min-h-screen bg-primary-light text-primary-dark dark:bg-black dark:text-primary-light"
   >
     <TheHeader />
-    <NuxtPage />
+    <NuxtPage class="flex-grow" />
     <AppFooter />
   </div>
 </template>
