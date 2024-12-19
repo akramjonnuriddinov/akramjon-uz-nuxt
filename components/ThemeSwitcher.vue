@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { isThemeChecked, toggleTheme, initTheme } from "~/composables/useTheme"
-// initTheme()
+import { isThemeChecked, toggleTheme } from "~/composables/useTheme"
 </script>
 
 <template>
