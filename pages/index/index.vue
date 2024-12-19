@@ -15,7 +15,9 @@ useSeoMeta({
 <template>
   <AppHero />
   <LatestPost />
-  <AppCategories />
+  <AppContainer>
+    <AppCategories />
+  </AppContainer>
   <!-- <NuxtRouteAnnouncer />
   <NuxtWelcome /> -->
 </template>
