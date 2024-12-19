@@ -53,7 +53,7 @@
   }
 
   body {
-    font-family: "IBM Plex Mono";
+    font-family: "Jetbrains Mono", "IBM Plex Mono";
   }
 
   ::selection {
