@@ -130,7 +130,25 @@
     font-display: swap;
   }
 
+  * {
+    animation: appear 0.3s ease-in-out;
+  }
+
   body {
     font-family: "IBM Plex Mono";
+  }
+
+  ::selection {
+    @apply bg-transparent text-primary-green;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
