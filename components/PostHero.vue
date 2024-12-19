@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-10">
+  <section class="">
     <AppContainer>
       <AppBreadcrump breadCrump="Posts (page 1)" />
       <h1 class="mb-1 text-4xl font-semibold">Posts</h1>
