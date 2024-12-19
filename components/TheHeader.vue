@@ -27,16 +27,18 @@ const links = [
   <header class="py-8">
     <AppContainer>
       <div class="flex items-center justify-between">
-        <a class="font-bold text-lg flex mr-10" href="#">Akramjon.Dev</a>
-        <ul class="flex items-center font-medium gap-6">
+        <NuxtLink to="/" class="flex mr-10 text-lg font-bold" href="#"
+          >Akramjon.Dev</NuxtLink
+        >
+        <ul class="flex items-center gap-6 font-medium">
           <li v-for="link in links" :key="link.name">
-            <RouterLink :to="link.path">{{ link.name }}</RouterLink>
+            <NuxtLink :to="link.path">{{ link.name }}</NuxtLink>
           </li>
         </ul>
-        <RouterLink class="flex items-center gap-1 ml-auto mr-6" to="/search">
+        <NuxtLink class="flex items-center gap-1 ml-auto mr-6" to="/search">
           <IconsSearch class="w-5" />
           <span>Search (⌘K)</span>
-        </RouterLink>
+        </NuxtLink>
         <ThemeSwitcher />
       </div>
     </AppContainer>

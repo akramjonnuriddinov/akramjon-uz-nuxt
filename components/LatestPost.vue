@@ -67,21 +67,21 @@ const posts = [
           :key="post.title"
           class="border-b pb-10 pt-4 transition-all duration-100 group font-medium hover:opacity-80 last:border-none"
         >
-          <RouterLink :to="post.path" class="flex items-center justify-between">
+          <NuxtLink :to="post.path" class="flex items-center justify-between">
             <span>{{ post.title }}</span>
             <div class="w-4 opacity-0 group-hover:opacity-100 transition-all">
               <IconsRight />
             </div>
-          </RouterLink>
+          </NuxtLink>
         </li>
       </ul>
       <div
         class="flex mt-10 mb-20 justify-center transition-opacity duration-100 hover:opacity-80"
       >
-        <RouterLink to="/posts" class="flex items-center gap-2"
+        <NuxtLink to="/posts" class="flex items-center gap-2"
           >📚 All Posts
           <IconsRight class="w-4" />
-        </RouterLink>
+        </NuxtLink>
       </div>
     </AppContainer>
   </section>

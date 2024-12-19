@@ -30,9 +30,9 @@ const categories = [
           :key="category"
           class="bg-primary-green text-white font-bold px-3 py-1 rounded-full"
         >
-          <RouterLink :to="`/tags/${category}`" class="whitespace-nowrap">{{
+          <NuxtLink :to="`/tags/${category}`" class="whitespace-nowrap">{{
             category
-          }}</RouterLink>
+          }}</NuxtLink>
         </li>
       </ul>
     </AppContainer>
