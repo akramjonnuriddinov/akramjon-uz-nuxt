@@ -23,7 +23,7 @@ definePageMeta({
 .custom-code h4,
 .custom-code h5,
 .custom-code h6 {
-  @apply font-bold;
+  font-weight: bold;
   margin-bottom: 0.75rem;
 }
 
@@ -54,7 +54,6 @@ definePageMeta({
 
 /* Code Styling */
 .custom-code code {
-  /* background-color: #f4f4f4; */
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
   font-family: "Fira Code", monospace;
@@ -73,11 +72,6 @@ definePageMeta({
   margin: 1rem 0;
   line-height: 1.5;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Highlighting for Code Elements */
-.custom-code pre code {
-  /* color: #f8f8f2; */
 }
 
 .custom-code pre code .keyword {
@@ -113,10 +107,8 @@ definePageMeta({
 .custom-code blockquote {
   margin: 1.5rem 0;
   padding: 1rem;
-  background: #f4f4f4;
   border-left: 4px solid #3498db;
   font-style: italic;
-  color: #555;
 }
 
 /* Summary GIFs */
