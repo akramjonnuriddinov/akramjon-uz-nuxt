@@ -1,69 +1,16 @@
 <script setup lang="ts">
 const posts = ref([
   {
-    title: "How to Use the Variant Props Pattern in Vue",
+    id: "1",
+    title: "Building Your First API with Express.js: A Beginner's Guide",
     description:
-      "Learn how to create type-safe Vue components where prop types depend on other props using TypeScript discriminated unions. A practical guide with real-world examples.",
-    content: "",
-    date: "Dec 15, 2024",
+      "A beginner-friendly guide to building your first API with Express.js",
+    date: "Dec 20, 2024",
   },
   {
-    title: "What is Local-first Web Development?",
-    description:
-      "Learn how to create type-safe Vue components where prop types depend on other props using TypeScript discriminated unions. A practical guide with real-world examples.",
-    content: "",
-    date: "Dec 15, 2024",
-  },
-  {
-    title:
-      "How to Use SQLite in Vue 3: Complete Guide to Offline-First Web Apps",
-    description:
-      "Learn how to create type-safe Vue components where prop types depend on other props using TypeScript discriminated unions. A practical guide with real-world examples.",
-    content: "",
-    date: "Dec 15, 2024",
-  },
-  {
-    title: "How to Use the Variant Props Pattern in Vue",
-    description:
-      "Learn how to create type-safe Vue components where prop types depend on other props using TypeScript discriminated unions. A practical guide with real-world examples.",
-    content: "",
-    date: "Dec 15, 2024",
-  },
-  {
-    title: "What is Local-first Web Development?",
-    description:
-      "Learn how to create type-safe Vue components where prop types depend on other props using TypeScript discriminated unions. A practical guide with real-world examples.",
-    content: "",
-    date: "Dec 15, 2024",
-  },
-  {
-    title:
-      "How to Use SQLite in Vue 3: Complete Guide to Offline-First Web Apps",
-    description:
-      "Learn how to create type-safe Vue components where prop types depend on other props using TypeScript discriminated unions. A practical guide with real-world examples.",
-    content: "",
-    date: "Dec 15, 2024",
-  },
-  {
-    title: "How to Use the Variant Props Pattern in Vue",
-    description:
-      "Learn how to create type-safe Vue components where prop types depend on other props using TypeScript discriminated unions. A practical guide with real-world examples.",
-    content: "",
-    date: "Dec 15, 2024",
-  },
-  {
-    title: "What is Local-first Web Development?",
-    description:
-      "Learn how to create type-safe Vue components where prop types depend on other props using TypeScript discriminated unions. A practical guide with real-world examples.",
-    content: "",
-    date: "Dec 15, 2024",
-  },
-  {
-    title:
-      "How to Use SQLite in Vue 3: Complete Guide to Offline-First Web Apps",
-    description:
-      "Learn how to create type-safe Vue components where prop types depend on other props using TypeScript discriminated unions. A practical guide with real-world examples.",
-    content: "",
+    id: "2",
+    title: "How to convert a SVG to PNG using Canvas",
+    description: "A simple way to convert a SVG to PNG using Canvas",
     date: "Dec 15, 2024",
   },
 ])
@@ -75,7 +22,14 @@ const posts = ref([
       <h3
         class="mb-1 text-lg font-medium transition-colors duration-100 hover:text-primary-green dark:hover:text-primary-light dark:text-primary-green"
       >
-        <NuxtLink :to="post.title">
+        <NuxtLink
+          :to="{
+            name: 'posts-slug',
+            params: {
+              slug: post.id,
+            },
+          }"
+        >
           {{ post.title }}
         </NuxtLink>
       </h3>

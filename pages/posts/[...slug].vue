@@ -1,3 +1,9 @@
+<script setup lang="ts">
+definePageMeta({
+  name: "posts-slug",
+})
+</script>
+
 <template>
   <main class="custom-code">
     <AppContainer>
@@ -5,8 +11,6 @@
     </AppContainer>
   </main>
 </template>
-
-<script setup></script>
 
 <style>
 * {
@@ -23,10 +27,9 @@
   margin-bottom: 0.75rem;
 }
 
-h1 {
+.custom-code h1 {
   font-size: 2rem;
   font-weight: bold;
-  text-align: center;
 }
 
 .custom-code h2 {
