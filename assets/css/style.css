@@ -53,11 +53,11 @@
   }
 
   body {
-    font-family: "Jetbrains Mono", "IBM Plex Mono";
+    font-family: "IBM Plex Mono", "Jetbrains Mono";
   }
 
   ::selection {
-    @apply bg-transparent text-primary-green;
+    @apply bg-primary-green/20;
   }
 }
 

@@ -19,34 +19,24 @@
 .custom-code h4,
 .custom-code h5,
 .custom-code h6 {
-  /* color: #00dc82; */
+  @apply font-bold;
   margin-bottom: 0.75rem;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
 }
 
 .custom-code h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 2rem;
 }
 
 .custom-code h3 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   margin-top: 1.5rem;
-}
-
-/* Links */
-.custom-code a {
-  /* color: #00dc82; */
-  text-decoration: none;
-}
-
-.custom-code a:hover {
-  color: #00dc82;
 }
 
 /* Lists */
@@ -70,7 +60,7 @@ h1 {
 }
 
 .custom-code pre {
-  background-color: #2d2d2d;
+  background-color: #18181b;
   color: #f8f8f2;
   padding: 1rem 1.5rem;
   border-radius: 8px;
