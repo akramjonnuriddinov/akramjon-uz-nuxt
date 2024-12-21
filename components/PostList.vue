@@ -41,7 +41,12 @@ const posts = ref([
       </h3>
       <p class="mb-1">{{ post.description }}</p>
       <NuxtLink
-        :to="post.title"
+        :to="{
+          name: 'posts-slug',
+          params: {
+            slug: post.id,
+          },
+        }"
         class="transition-colors duration-100 hover:text-primary-green dark:hover:text-primary-light dark:text-primary-green"
         >Read More</NuxtLink
       >

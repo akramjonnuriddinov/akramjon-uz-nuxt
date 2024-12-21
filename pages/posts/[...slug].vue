@@ -5,9 +5,12 @@ definePageMeta({
 </script>
 
 <template>
-  <main class="custom-code">
+  <main>
     <AppContainer>
-      <ContentDoc />
+      <PostBanner />
+      <h1>{{}}</h1>
+      <p>{{}}</p>
+      <ContentDoc class="custom-code" />
     </AppContainer>
   </main>
 </template>
