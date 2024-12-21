@@ -74,7 +74,7 @@ definePageMeta({
 .custom-code code {
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
-  font-family: "Jetbrains Mono", monospace !important;
+  font-family: monospace, "IBM Plex Mono", "Jetbrains Mono", monospace !important;
   line-height: 2;
   zoom: 120%;
   font-size: 0.95rem;
@@ -86,7 +86,7 @@ definePageMeta({
   padding: 1rem 1.5rem;
   border-radius: 8px;
   overflow-x: auto;
-  font-family: "Jetbrains Mono", monospace !important;
+  font-family: monospace, "IBM Plex Mono", "Jetbrains Mono", monospace !important;
   font-size: 0.95rem;
   margin: 1rem 0;
   line-height: 1.5;
@@ -136,6 +136,21 @@ definePageMeta({
   margin: 1rem auto;
   max-width: 400px;
   border-radius: 8px;
+}
+
+.custom-code table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.custom-code th,
+.custom-code td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+}
+
+.custom-code th {
+  background-color: #f4f4f4;
 }
 
 /* Responsive Design */
