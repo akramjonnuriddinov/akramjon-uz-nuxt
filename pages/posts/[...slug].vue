@@ -13,6 +13,11 @@ definePageMeta({
       </NuxtLink>
       <ContentDoc>
         <template v-slot="{ doc }">
+          <Head>
+            <Title>{{ doc.title }}</Title>
+            <Meta name="description" :content="doc.description" />
+            <Meta name="keywords" :content="doc.keywords" />
+          </Head>
           <article>
             <h1 class="mt-2 text-2xl font-bold">{{ doc.title }}</h1>
             <div class="flex my-10">
