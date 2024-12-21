@@ -13,6 +13,12 @@ const posts = ref([
     description: "A simple way to convert a SVG to PNG using Canvas",
     date: "Dec 15, 2024",
   },
+  {
+    id: "3",
+    title: "Creating a CRUD API with Golang",
+    description: "Learn how to build a CRUD API with Golang using Gin and GORM",
+    date: "Dec 21, 2024",
+  },
 ])
 </script>
 
