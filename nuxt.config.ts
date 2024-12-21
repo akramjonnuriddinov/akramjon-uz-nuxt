@@ -21,7 +21,11 @@ export default defineNuxtConfig({
 
   content: {
     highlight: {
-      theme: 'dracula', // Choose from popular themes like 'dracula', 'github-dark', etc.
+      // theme: 'dracula', // Choose from popular themes like 'dracula', 'github-dark', etc.
+      theme: {
+        default: 'light-plus',
+        dark: 'dracula'
+      }
     },
   },
 

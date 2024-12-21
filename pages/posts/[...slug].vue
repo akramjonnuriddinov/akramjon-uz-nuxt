@@ -74,23 +74,23 @@ definePageMeta({
 .custom-code code {
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
-  font-family: monospace, "IBM Plex Mono", "Jetbrains Mono", monospace !important;
+  font-family: "Jetbrains Mono", "IBM Plex Mono" !important;
   line-height: 2;
   zoom: 120%;
   font-size: 0.95rem;
 }
 
 .custom-code pre {
-  background-color: #252526;
-  color: #f8f8f2;
+  @apply bg-white dark:bg-[#252526] text-[#252526] dark:text-[#f8f8f2];
   padding: 1rem 1.5rem;
   border-radius: 8px;
   overflow-x: auto;
-  font-family: monospace, "IBM Plex Mono", "Jetbrains Mono", monospace !important;
+  font-family: "Jetbrains Mono", "IBM Plex Mo" !important;
   font-size: 0.95rem;
   margin: 1rem 0;
   line-height: 1.5;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #252525;
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); */
 }
 
 .custom-code pre code .keyword {
