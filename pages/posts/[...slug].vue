@@ -5,12 +5,27 @@ definePageMeta({
 </script>
 
 <template>
-  <main>
+  <main class="py-10 custom-code">
     <AppContainer>
-      <PostBanner />
-      <h1>{{}}</h1>
-      <p>{{}}</p>
-      <ContentDoc class="custom-code" />
+      <NuxtLink to="/posts" class="flex items-center">
+        <IconsBack class="w-2.5 mr-2" />
+        Go back
+      </NuxtLink>
+      <ContentDoc>
+        <template v-slot="{ doc }">
+          <article>
+            <h1 class="mt-2 text-2xl font-bold">{{ doc.title }}</h1>
+            <div class="flex my-10">
+              <IconsCalendar class="w-4 mr-3" />
+              <time>{{ doc.published }}</time>
+            </div>
+            <ContentRenderer :value="doc" />
+          </article>
+        </template>
+        <template #not-found>
+          <h1>Document not found</h1>
+        </template>
+      </ContentDoc>
     </AppContainer>
   </main>
 </template>
