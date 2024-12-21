@@ -3,12 +3,13 @@ const searchTerm = ref("")
 
 const { data: articles, refresh } = await useAsyncData("posts", () =>
   queryContent("posts")
-    .only(["id", "title", "description", "thumbnail", "url", "published"])
+    .only(["id", "title", "description", "keywords", "published"])
     .where({
       $or: [
+        { id: { $contains: searchTerm.value } },
         { title: { $contains: searchTerm.value } },
         { description: { $contains: searchTerm.value } },
-        { url: { $contains: searchTerm.value } },
+        { keywords: { $contains: searchTerm.value } },
         { published: { $contains: searchTerm.value } },
       ],
     })
@@ -17,6 +18,12 @@ const { data: articles, refresh } = await useAsyncData("posts", () =>
 )
 
 const search = () => refresh()
+
+const highlightText = (text: string) => {
+  if (!searchTerm.value) return text
+  const regExp = new RegExp(`(${searchTerm.value})`, "gi")
+  return text.replace(regExp, '<span class="bg-primary-green/60">$1</span>')
+}
 </script>
 
 <template>
@@ -44,6 +51,7 @@ const search = () => refresh()
       >
         <h3 class="text-lg font-bold">
           <NuxtLink
+            v-html="highlightText(article.title as any)"
             :to="{
               name: 'posts-slug',
               params: {
@@ -51,10 +59,9 @@ const search = () => refresh()
               },
             }"
           >
-            {{ article.title }}
           </NuxtLink>
         </h3>
-        <p>{{ article.description }}</p>
+        <p v-html="highlightText(article.description)"></p>
       </li>
     </ul>
   </div>
