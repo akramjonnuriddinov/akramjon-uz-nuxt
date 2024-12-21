@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   css: ['~/assets/css/style.css'],
 
   postcss: {
@@ -21,7 +21,7 @@ export default defineNuxtConfig({
 
   content: {
     highlight: {
-      theme: 'github-dark', // Choose from popular themes like 'dracula', 'github-dark', etc.
+      theme: 'dracula', // Choose from popular themes like 'dracula', 'github-dark', etc.
     },
   },
 

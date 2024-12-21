@@ -56,18 +56,19 @@ definePageMeta({
 .custom-code code {
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
-  font-family: "Fira Code", monospace;
-  color: #d23669;
+  font-family: "Jetbrains Mono", monospace !important;
+  line-height: 2;
+  zoom: 120%;
   font-size: 0.95rem;
 }
 
 .custom-code pre {
-  background-color: #18181b;
+  background-color: #252526;
   color: #f8f8f2;
   padding: 1rem 1.5rem;
   border-radius: 8px;
   overflow-x: auto;
-  font-family: "Fira Code", monospace;
+  font-family: "Jetbrains Mono", monospace !important;
   font-size: 0.95rem;
   margin: 1rem 0;
   line-height: 1.5;
