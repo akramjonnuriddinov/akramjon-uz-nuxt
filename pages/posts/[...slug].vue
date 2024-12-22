@@ -77,7 +77,7 @@ definePageMeta({
 
 /* Code Styling */
 .custom-code code {
-  padding: 0.25rem 0.5rem;
+  padding: 0 0.5rem;
   border-radius: 4px;
   font-family: "Jetbrains Mono", "IBM Plex Mono" !important;
   line-height: 2;
@@ -87,7 +87,7 @@ definePageMeta({
 
 .custom-code pre {
   @apply bg-white dark:bg-[#252526] text-[#252526] dark:text-[#f8f8f2];
-  padding: 1rem 1.5rem;
+  padding: 0 1.5rem;
   border-radius: 8px;
   overflow-x: auto;
   font-family: "Jetbrains Mono", "IBM Plex Mo" !important;
@@ -95,7 +95,15 @@ definePageMeta({
   margin: 1rem 0;
   line-height: 1.5;
   border: 1px solid #252525;
-  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-code block {
+  @apply bg-gray-100 text-gray-950 dark:text-gray-100 dark:bg-gray-700;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+  font-weight: 500;
+  padding: 0.15rem 0.3rem;
 }
 
 .custom-code pre code .keyword {

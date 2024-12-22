@@ -19,6 +19,13 @@ const posts = ref([
     description: "Learn how to build a CRUD API with Golang using Gin and GORM",
     date: "Dec 21, 2024",
   },
+  {
+    id: "4",
+    title: "Vue.js va Go(Golang) yordamida Full-Stack Web Ilova Qurish",
+    description:
+      "Bugungi kunda zamonaviy web ilovalar yaratish uchun frontend va backend texnologiyalarining uyg‘un ishlashi muhim ahamiyatga ega.",
+    date: "Dec 22, 2024",
+  },
 ])
 </script>
 
