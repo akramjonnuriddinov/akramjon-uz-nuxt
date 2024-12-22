@@ -32,6 +32,13 @@ const posts = ref([
     description: "Creating CRUD API in Golang full",
     date: "Dec 22, 2024",
   },
+  {
+    id: "6",
+    title: "How to use Markdown (.md) files",
+    description:
+      "Markdown is a lightweight markup language used to format plain text",
+    date: "Dec 22, 2024",
+  },
 ])
 </script>
 
