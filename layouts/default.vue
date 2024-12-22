@@ -2,8 +2,22 @@
 import { onMounted } from "vue"
 import { initTheme } from "~/composables/useTheme"
 
+const router = useRouter()
+
+const handleKeydown = (event: KeyboardEvent) => {
+  if ((event.ctrlKey || event.metaKey) && event.key === "k") {
+    event.preventDefault()
+    router.push({ name: "search" })
+  }
+}
+
 onMounted(() => {
   initTheme()
+  window.addEventListener("keydown", handleKeydown)
+})
+
+onBeforeMount(() => {
+  window.removeEventListener("keydown", handleKeydown)
 })
 </script>
 
