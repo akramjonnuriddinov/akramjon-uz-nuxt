@@ -1,6 +1,19 @@
 .copy-btn {
   @apply absolute top-2 right-2 text-sm px-2 py-1 bg-primary-green text-white dark:bg-primary-dark rounded cursor-pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 14px;
+  padding: 4px 8px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #00dc82;
   font-family: "SF Mono", "Jetbrains Mono", "IBM Plex Mono";
+}
+
+html.dark .copy-btn {
+  background-color: #252525;
 }
 
 /* Header and Title */
