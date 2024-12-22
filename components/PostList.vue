@@ -26,6 +26,12 @@ const posts = ref([
       "Bugungi kunda zamonaviy web ilovalar yaratish uchun frontend va backend texnologiyalarining uyg‘un ishlashi muhim ahamiyatga ega.",
     date: "Dec 22, 2024",
   },
+  {
+    id: "5",
+    title: "Golang CRUD API",
+    description: "Creating CRUD API in Golang full",
+    date: "Dec 22, 2024",
+  },
 ])
 </script>
 

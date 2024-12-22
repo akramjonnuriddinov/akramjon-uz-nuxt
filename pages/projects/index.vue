@@ -19,6 +19,7 @@ const projects = [
     description: "Shaping Digital Dreams",
     link: "https://teamly.netlify.app/",
     icon: "/images/3.png",
+    id: "1",
   },
   {
     title: "Uz Pharm Forum",
@@ -39,9 +40,13 @@ const projects = [
     />
     <ul class="flex flex-col gap-5 py-10">
       <li v-for="project in projects" class="mb-5">
-        <a
-          :href="project.link"
-          target="_blank"
+        <NuxtLink
+          :to="{
+            name: 'projects-slug',
+            params: {
+              slug: project.id,
+            },
+          }"
           class="flex items-end justify-between group"
         >
           <div class="max-w-lg">
@@ -60,7 +65,7 @@ const projects = [
           <div>
             <img width="50" :src="project.icon" alt="" format="webp" />
           </div>
-        </a>
+        </NuxtLink>
       </li>
     </ul>
   </AppContainer>
