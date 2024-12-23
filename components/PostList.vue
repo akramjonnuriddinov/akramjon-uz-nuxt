@@ -39,6 +39,14 @@ const posts = ref([
       "Markdown is a lightweight markup language used to format plain text",
     date: "Dec 22, 2024",
   },
+  {
+    id: "7",
+    title:
+      "createElement orqali yaratilgan elementlar global serverda qayta yuklanganda ko‘rinmaslik muammosi",
+    description:
+      "createElement orqali yaratilgan elementlarning serverda reload qilganda ko'rinmaslik sabablari va bu muammoni qanday hal qilish mumkinligini ko'rib chiqamiz.",
+    date: "Dec 23, 2024",
+  },
 ])
 </script>
 
