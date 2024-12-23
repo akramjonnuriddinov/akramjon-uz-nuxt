@@ -31,6 +31,7 @@ const components = [
         class="flex w-5 transition-all duration-100 hover:text-primary-green hover:rotate-6"
         :title="component.link"
         :href="component.link"
+        target="_blank"
       >
         <component :is="component.name" />
       </a>
