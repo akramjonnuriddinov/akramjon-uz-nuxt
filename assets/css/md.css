@@ -1,5 +1,5 @@
 .copy-btn {
-  @apply absolute top-2 right-2 text-sm px-2 py-1 bg-primary-green text-white dark:bg-primary-dark rounded cursor-pointer;
+  @apply absolute px-2 py-1 text-sm text-white rounded cursor-pointer top-2 right-2 bg-primary-green dark:bg-primary-dark;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -143,6 +143,7 @@ html.dark .copy-btn {
 
 .custom-code th {
   background-color: #f4f4f4;
+  @apply bg-[#f4f4f4] dark:bg-[#252526];
 }
 
 /* Responsive Design */
