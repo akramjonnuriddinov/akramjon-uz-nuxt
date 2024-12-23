@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Space Mono";
+  src: url("~/assets/fonts/Space_Mono/SpaceMono-Italic.woff2") format("woff2"),
+    url("~/assets/fonts/Space_Mono/SpaceMono-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url("~/assets/fonts/Space_Mono/SpaceMono-Regular.woff2") format("woff2"),
+    url("~/assets/fonts/Space_Mono/SpaceMono-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url("~/assets/fonts/Space_Mono/SpaceMono-Bold.woff2") format("woff2"),
+    url("~/assets/fonts/Space_Mono/SpaceMono-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Jetbrains */
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("~/assets/fonts/JetBrains/JetBrainsMono-Italic.woff2")
+      format("woff2"),
+    url("~/assets/fonts/JetBrains/JetBrainsMono-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("~/assets/fonts/JetBrains/JetBrainsMono-Regular.woff2")
+      format("woff2"),
+    url("~/assets/fonts/JetBrains/JetBrainsMono-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
