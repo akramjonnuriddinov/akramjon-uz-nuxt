@@ -21,7 +21,7 @@ useSeoMeta({
     </p>
 
     <div class="py-5 mt-10">
-      <h2 class="text-2xl font-semibold mb-5 text-primary-green">
+      <h2 class="mb-5 text-2xl font-semibold text-primary-green">
         Professional Journey
       </h2>
       <ul class="flex flex-col">
@@ -48,7 +48,7 @@ useSeoMeta({
       </ul>
     </div>
     <div class="py-5">
-      <h2 class="text-2xl font-semibold mb-5 text-primary-green">Tech Stack</h2>
+      <h2 class="mb-5 text-2xl font-semibold text-primary-green">Tech Stack</h2>
       <ul class="flex flex-col">
         <li
           class="flex items-center last:mb-0 mb-5 gap-4 before:w-1.5 before:h-1.5 before:flex before:rounded-full before:bg-primary-green"
@@ -77,7 +77,7 @@ useSeoMeta({
       </ul>
     </div>
     <div class="py-5">
-      <h2 class="text-2xl font-semibold mb-5 text-primary-green">Educations</h2>
+      <h2 class="mb-5 text-2xl font-semibold text-primary-green">Educations</h2>
       <ul class="flex flex-col">
         <li
           class="flex items-center last:mb-0 mb-5 gap-4 before:w-1.5 before:h-1.5 before:flex before:rounded-full before:bg-primary-green"
@@ -102,7 +102,7 @@ useSeoMeta({
       </ul>
     </div>
     <div class="py-5">
-      <h2 class="text-2xl font-semibold mb-5 text-primary-green">Languages</h2>
+      <h2 class="mb-5 text-2xl font-semibold text-primary-green">Languages</h2>
       <ul class="flex flex-col">
         <li
           class="flex items-center last:mb-0 mb-5 gap-4 before:w-1.5 before:h-1.5 before:flex before:rounded-full before:bg-primary-green"
