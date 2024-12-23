@@ -4,22 +4,26 @@ definePageMeta({
 })
 
 onMounted(() => {
-  nextTick(() => {
+  const observer = new MutationObserver(() => {
     document.querySelectorAll("pre").forEach((block) => {
-      const button = document.createElement("button")
-      button.innerText = "Copy"
-      button.className = "copy-btn"
-      block.appendChild(button)
+      if (!block.querySelector(".copy-btn")) {
+        const button = document.createElement("button")
+        button.innerText = "Copy"
+        button.className = "copy-btn"
+        block.appendChild(button)
 
-      button.addEventListener("click", () => {
-        const code = block.querySelector("code")?.innerText || ""
-        navigator.clipboard.writeText(code).then(() => {
-          button.innerText = "Copied!"
-          setTimeout(() => (button.innerText = "Copy"), 2000)
+        button.addEventListener("click", () => {
+          const code = block.querySelector("code")?.innerText || ""
+          navigator.clipboard.writeText(code).then(() => {
+            button.innerText = "Copied!"
+            setTimeout(() => (button.innerText = "Copy"), 2000)
+          })
         })
-      })
+      }
     })
   })
+
+  observer.observe(document.body, { childList: true, subtree: true })
 })
 </script>
 
