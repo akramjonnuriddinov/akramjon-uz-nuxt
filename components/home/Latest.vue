@@ -1,6 +1,6 @@
 <template>
   <section>
-    <AppContainer>
+    <LayoutContainer>
       <h2 class="mb-2 text-2xl font-semibold">📝 Latest Posts</h2>
       <ContentList path="posts" v-slot="{ list }">
         <ul class="flex flex-col">
@@ -34,6 +34,6 @@
           <IconsRight class="w-4" />
         </NuxtLink>
       </div>
-    </AppContainer>
+    </LayoutContainer>
   </section>
 </template>

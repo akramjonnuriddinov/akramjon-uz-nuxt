@@ -25,8 +25,8 @@ onBeforeMount(() => {
   <div
     class="flex flex-col min-h-screen bg-primary-light text-primary-dark dark:bg-primary-dark dark:text-primary-light"
   >
-    <TheHeader />
+    <LayoutHeader />
     <NuxtPage class="flex-grow" />
-    <AppFooter />
+    <LayoutFooter />
   </div>
 </template>

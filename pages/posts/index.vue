@@ -5,10 +5,10 @@ useSeoMeta({
 </script>
 
 <template>
-  <AppContainer class="flex flex-col">
-    <AppBreadcrump breadCrump="Posts (page 1)" />
+  <LayoutContainer class="flex flex-col">
+    <SharedBreadcrump breadCrump="Posts (page 1)" />
     <SharedHero title="Posts 📒" content="All the articles I've posted." />
     <PostList />
-    <BlogPagination class="flex-1" />
-  </AppContainer>
+    <PostPagination class="flex-1" />
+  </LayoutContainer>
 </template>

@@ -13,11 +13,9 @@ useSeoMeta({
 </script>
 
 <template>
-  <AppHero />
-  <LatestPost />
-  <AppContainer>
-    <AppCategories />
-  </AppContainer>
-  <!-- <NuxtRouteAnnouncer />
-  <NuxtWelcome /> -->
+  <HomeHero />
+  <HomeLatest />
+  <LayoutContainer>
+    <SharedCategories />
+  </LayoutContainer>
 </template>

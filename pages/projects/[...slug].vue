@@ -6,7 +6,7 @@ definePageMeta({
 
 <template>
   <main class="py-10 custom-code">
-    <AppContainer>
+    <LayoutContainer>
       <NuxtLink to="/projects" class="flex items-center">
         <IconsBack class="w-2.5 mr-2" />
         Go back
@@ -31,7 +31,7 @@ definePageMeta({
           <h1>Document not found</h1>
         </template>
       </ContentDoc>
-    </AppContainer>
+    </LayoutContainer>
   </main>
 </template>
 

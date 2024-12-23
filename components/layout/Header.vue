@@ -25,9 +25,9 @@ const links = [
 
 <template>
   <header class="py-8">
-    <AppContainer>
+    <LayoutContainer>
       <div class="flex items-center justify-between">
-        <NuxtLink to="/" class="flex mr-10 text-lg font-bold" href="#"
+        <NuxtLink to="/" class="flex mr-10 text-lg font-bold"
           >Akramjon.N</NuxtLink
         >
         <ul class="flex items-center gap-6 font-medium">
@@ -48,6 +48,6 @@ const links = [
         </NuxtLink>
         <ThemeSwitcher />
       </div>
-    </AppContainer>
+    </LayoutContainer>
   </header>
 </template>

@@ -5,9 +5,9 @@ useSeoMeta({
 </script>
 
 <template>
-  <AppContainer>
-    <AppBreadcrump bread-crump="Search" />
+  <LayoutContainer>
+    <SharedBreadcrump bread-crump="Search" />
     <SharedHero title="Search" content="Search any article ..." />
     <PostSearch />
-  </AppContainer>
+  </LayoutContainer>
 </template>

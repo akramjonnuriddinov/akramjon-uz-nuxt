@@ -5,9 +5,9 @@ useSeoMeta({
 </script>
 
 <template>
-  <AppContainer>
-    <AppBreadcrump bread-crump="Tags" />
+  <LayoutContainer>
+    <SharedBreadcrump bread-crump="Tags" />
     <SharedHero title="Tags 🏷️" content="All the tags used in posts." />
-    <AppCategories class="mt-10" />
-  </AppContainer>
+    <SharedCategories class="mt-10" />
+  </LayoutContainer>
 </template>

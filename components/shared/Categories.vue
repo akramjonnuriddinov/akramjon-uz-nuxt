@@ -29,9 +29,7 @@ const categories = [
         :key="category"
         class="px-3 py-1 font-bold text-white rounded-full bg-primary-green selection:bg-transparent selection:text-white"
       >
-        <NuxtLink :to="`/tags/${category}`" class="whitespace-nowrap">{{
-          category
-        }}</NuxtLink>
+        <NuxtLink to="/" class="whitespace-nowrap">{{ category }}</NuxtLink>
       </li>
     </ul>
   </section>

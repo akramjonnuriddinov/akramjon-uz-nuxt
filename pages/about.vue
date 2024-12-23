@@ -5,8 +5,8 @@ useSeoMeta({
 </script>
 
 <template>
-  <AppContainer>
-    <AppBreadcrump bread-crump="About" />
+  <LayoutContainer>
+    <SharedBreadcrump bread-crump="About" />
     <SharedHero title="About 🏋️" />
     <h2 class="my-10">Frontend Developer | Vue.js | Uzbekistan</h2>
     <p class="mb-5">
@@ -116,5 +116,5 @@ useSeoMeta({
         </li>
       </ul>
     </div>
-  </AppContainer>
+  </LayoutContainer>
 </template>
