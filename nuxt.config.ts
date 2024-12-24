@@ -12,6 +12,7 @@ export default defineNuxtConfig({
   },
 
   app: {
+    pageTransition: { name: "page", mode: "out-in" },
     head: {
       title: "Akramjon Nuriddinov | Vue.js Developer",
       charset: 'utf-8',

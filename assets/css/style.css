@@ -7,7 +7,7 @@
 
 @layer base {
   * {
-    animation: appear 0.1s ease-in-out;
+    /* animation: appear 0.1s ease-in-out; */
     scroll-behavior: smooth;
   }
 
