@@ -3,6 +3,8 @@ definePageMeta({
   name: "posts-slug",
 })
 
+const categories = ["Vue", "Golang"]
+
 onMounted(() => {
   const observer = new MutationObserver(() => {
     document.querySelectorAll("pre").forEach((block) => {
@@ -56,4 +58,16 @@ onMounted(() => {
       </ContentDoc>
     </LayoutContainer>
   </main>
+  <LayoutContainer>
+    <ul class="flex flex-wrap gap-3 ml-0">
+      <li
+        v-for="category in categories"
+        :key="category"
+        class="px-3 py-1 font-bold text-white rounded-full bg-primary-green selection:bg-transparent selection:text-white"
+      >
+        <NuxtLink to="/" class="whitespace-nowrap">{{ category }}</NuxtLink>
+      </li>
+    </ul>
+    <SharedSharePost />
+  </LayoutContainer>
 </template>
