@@ -3,6 +3,7 @@ import IconsGithub from "@/components/icons/Github.vue"
 import IconsLinkedin from "@/components/icons/Linkedin.vue"
 import IconsEmail from "@/components/icons/Email.vue"
 import IconsPhone from "~/components/icons/Phone.vue"
+import IconsLeetcode from "~/components/icons/Leetcode.vue"
 
 const components = [
   {
@@ -20,6 +21,10 @@ const components = [
   {
     link: "tel:+998900506166",
     name: IconsPhone,
+  },
+  {
+    link: "https://leetcode.com/u/Nuriddinov/",
+    name: IconsLeetcode,
   },
 ]
 </script>
