@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useImage } from "~/composables/useImage"
-
 const projects = [
   {
     title: "NamMQI",
