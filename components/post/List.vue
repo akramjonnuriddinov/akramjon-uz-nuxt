@@ -5,25 +5,13 @@
         <h3
           class="mb-1 text-lg font-medium transition-colors duration-100 hover:text-primary-green dark:hover:text-primary-light dark:text-primary-green"
         >
-          <NuxtLink
-            :to="{
-              name: 'posts-slug',
-              params: {
-                slug: post.id,
-              },
-            }"
-          >
+          <NuxtLink :to="post._path">
             {{ post.title }}
           </NuxtLink>
         </h3>
         <p class="mb-1">{{ post.description }}</p>
         <NuxtLink
-          :to="{
-            name: 'posts-slug',
-            params: {
-              slug: post.id,
-            },
-          }"
+          :to="post._path"
           class="transition-colors duration-100 hover:text-primary-green dark:hover:text-primary-light dark:text-primary-green"
           >Read More</NuxtLink
         >

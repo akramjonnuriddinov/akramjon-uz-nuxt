@@ -10,12 +10,7 @@
             class="pt-4 pb-10 font-medium transition-all duration-100 border-b group hover:opacity-80 last:border-none"
           >
             <NuxtLink
-              :to="{
-                name: 'posts-slug',
-                params: {
-                  slug: post.id,
-                },
-              }"
+              :to="post._path"
               class="flex items-center justify-between"
             >
               <span>{{ post.title }}</span>
