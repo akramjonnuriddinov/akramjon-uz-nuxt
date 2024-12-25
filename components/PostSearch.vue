@@ -3,9 +3,10 @@ const searchTerm = ref("")
 
 const { data: articles, refresh } = await useAsyncData("posts", () =>
   queryContent("posts")
-    .only(["id", "title", "description", "keywords", "published"])
+    .only(["id", "title", "description", "keywords", "published", "_path"])
     .where({
       $or: [
+        { _path: { $contains: searchTerm.value } },
         { id: { $contains: searchTerm.value } },
         { title: { $contains: searchTerm.value } },
         { description: { $contains: searchTerm.value } },
@@ -52,12 +53,7 @@ const highlightText = (text: string) => {
         <h3 class="text-lg font-bold">
           <NuxtLink
             v-html="highlightText(article.title as any)"
-            :to="{
-              name: 'posts-slug',
-              params: {
-                slug: article.id,
-              },
-            }"
+            :to="article._path"
           >
           </NuxtLink>
         </h3>

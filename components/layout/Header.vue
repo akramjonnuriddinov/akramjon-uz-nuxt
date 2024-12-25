@@ -53,7 +53,7 @@ const links = [
 </template>
 
 <style scoped>
-navbar .router-link-active {
+.navbar .router-link-active {
   @apply decoration-wavy underline underline-offset-4;
   text-decoration-thickness: 2px;
 }
