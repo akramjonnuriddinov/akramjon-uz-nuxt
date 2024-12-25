@@ -27,10 +27,10 @@ const links = [
   <header class="py-8">
     <LayoutContainer>
       <div class="flex items-center justify-between">
-        <NuxtLink to="/" class="flex mr-10 text-lg font-bold"
+        <NuxtLink to="/" class="flex mr-10 text-lg font-bold logo"
           >Akramjon.N</NuxtLink
         >
-        <ul class="flex items-center gap-6 font-medium">
+        <ul class="flex items-center gap-6 font-medium navbar">
           <li v-for="link in links" :key="link.name">
             <NuxtLink
               :to="link.path"
@@ -51,3 +51,10 @@ const links = [
     </LayoutContainer>
   </header>
 </template>
+
+<style scoped>
+navbar .router-link-active {
+  @apply decoration-wavy underline underline-offset-4;
+  text-decoration-thickness: 2px;
+}
+</style>
