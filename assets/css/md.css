@@ -9,7 +9,6 @@
   border-radius: 4px;
   cursor: pointer;
   background-color: #00dc82;
-  font-family: "Space Mono", "Jetbrains Mono";
 }
 
 html.dark .copy-btn {
@@ -56,7 +55,7 @@ html.dark .copy-btn {
 .custom-code code {
   padding: 0 0.5rem 0.2rem;
   border-radius: 4px;
-  font-family: "Space Mono", "Jetbrains Mono";
+  font-family: monospace, "Space Mono", "Jetbrains Mono";
   line-height: 2;
   zoom: 120%;
   font-size: 0.95rem;
