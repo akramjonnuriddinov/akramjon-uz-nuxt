@@ -13,9 +13,11 @@ useSeoMeta({
 </script>
 
 <template>
-  <HomeHero />
-  <HomeLatest />
-  <LayoutContainer>
-    <SharedCategories />
-  </LayoutContainer>
+  <div>
+    <HomeHero />
+    <HomeLatest />
+    <LayoutContainer>
+      <SharedCategories />
+    </LayoutContainer>
+  </div>
 </template>
