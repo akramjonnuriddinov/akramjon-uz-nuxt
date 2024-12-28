@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { onMounted } from "vue"
 import { initTheme } from "~/composables/useTheme"
 
 const router = useRouter()
