@@ -1,3 +1,27 @@
+.custom-code h1 a,
+.custom-code h2 a,
+.custom-code h3 a,
+.custom-code h4 a,
+.custom-code h5 a,
+.custom-code h6 a {
+  text-decoration: none; /* Havolani bezatish */
+  color: inherit; /* Matnning rangini meros qilib olish */
+}
+
+.custom-code ul {
+  list-style: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.custom-code ol {
+  list-style: decimal;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .copy-btn {
   @apply absolute px-2 py-1 text-sm text-white rounded cursor-pointer top-2 right-2 bg-primary-green dark:bg-primary-dark;
   position: absolute;
@@ -39,6 +63,14 @@ html.dark .copy-btn {
 .custom-code h3 {
   font-size: 1.5rem;
   margin-top: 1.5rem;
+}
+
+.custom-code a {
+  @apply text-primary-green;
+}
+
+.custom-code strong {
+  @apply text-primary-dark dark:text-primary-light;
 }
 
 /* Lists */

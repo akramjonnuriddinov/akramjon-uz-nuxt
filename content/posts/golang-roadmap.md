@@ -6,7 +6,7 @@ published: "26/12/2025"
 
 Agar **Golang backend developer** bo'lishni xohlasangiz, kerakli texnologiya va dasturlash tillarini o'rganishning to'g'ri tartibini tanlash muhim. Go tilida backend dasturlashni o'rganish — bu faqat Go ni o'rganishdan ko'ra kengroq jarayon bo'lib, turli texnologiyalar, usullar, va me'yorlar bilan tanishish zarur. Quyida men Go backend developer bo'lish uchun o'rganish kerak bo'lgan texnologiyalarni va ularni o'rganish tartibini keltiraman.
 
-### 1. **Go (Golang) asoslarini o'rganish**
+### **1. Go (Golang) asoslarini o'rganish**
 
 Birinchi qadam — **Go tilini** o'rganish. Go backend dasturchisi bo'lish uchun Go tilining asoslarini yaxshi bilish kerak. Go ning sintaksisi oson bo'lsa-da, uning afzalliklari va qoidalarini tushunish juda muhim.
 
