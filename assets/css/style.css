@@ -12,7 +12,7 @@
   }
 
   body {
-    font-family: "SFMono", "Space Mono";
+    font-family: "Space Mono", "SFMono", "JetBrains Mono", monospace;
   }
 
   ::selection {

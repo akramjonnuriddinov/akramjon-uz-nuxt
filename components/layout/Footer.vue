@@ -2,7 +2,7 @@
   <footer class="py-10">
     <LayoutContainer>
       <div class="flex items-center justify-between">
-        <p class="whitespace-nowrap">Copyright © 2024 | All rights reserved.</p>
+        <p class="whitespace-nowrap">Copyright © 2025 | All rights reserved.</p>
         <div>
           <SharedSocialLinks />
         </div>

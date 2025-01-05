@@ -16,8 +16,7 @@ useSeoMeta({
     </p>
     <p>
       My journey is fueled by continuous learning and a desire to share
-      knowledge. When I’m not coding, you’ll find me exploring the latest tech
-      trends, hitting the gym, or lost in the pages of a good book or manga.
+      knowledge.
     </p>
 
     <div class="py-5 mt-10">
@@ -60,7 +59,7 @@ useSeoMeta({
           class="flex items-center last:mb-0 mb-5 gap-4 before:w-1.5 before:h-1.5 before:flex before:rounded-full before:bg-primary-green"
         >
           <span class="text-primary-green">Frameworks: </span>
-          <span>Vue.js, Nuxt, Tailwind, Firebase, Gin</span>
+          <span>Vue.js, Nuxt, Tailwind, Firebase</span>
         </li>
         <li
           class="flex items-center last:mb-0 mb-5 gap-4 before:w-1.5 before:h-1.5 before:flex before:rounded-full before:bg-primary-green"
