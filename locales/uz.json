@@ -1,4 +1,15 @@
 {
   "welcome": "Xush kelibsiz",
-  "hi": "👋 Assalomu alaykum! I'm Akramjon."
+  "hi": "👋 Salom! Men Akramjonman.",
+  "hero_text": "Agar siz veb-dasturchi sifatida yaxshilanishni istasangiz, mening blog postlarim sizga yordam beradi deb umid qilaman.",
+  "social_links": "Ijtimoiy tarmoqlar",
+  "latest_posts": "Eng so'nggi Maqolalar",
+  "all_posts": "Hamma Maqolalar",
+  "categories": "Kategoriyalar",
+  "copyright": "Barcha huquqlar himoyalangan.",
+  "posts": "Maqolalar",
+  "tags": "Taglar",
+  "about": "Men haqimda",
+  "projects": "Loyihalar",
+  "search": "Qidiruv (⌘K)"
 }

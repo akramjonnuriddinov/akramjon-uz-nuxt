@@ -3,8 +3,7 @@
     <LayoutContainer>
       <h1 class="mb-8 text-4xl font-bold">{{ $t("hi") }}</h1>
       <p class="mb-4">
-        If you want to get better as a Web Developer, I hope my blog posts will
-        help you.
+        {{ $t("hero_text") }}
       </p>
       <div class="flex items-center gap-2">
         <p>Social Links:</p>

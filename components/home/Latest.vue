@@ -1,7 +1,7 @@
 <template>
   <section>
     <LayoutContainer>
-      <h2 class="mb-2 text-2xl font-semibold">📝 Latest Posts</h2>
+      <h2 class="mb-2 text-2xl font-semibold">📝 {{ $t("latest_posts") }}</h2>
       <ContentList path="posts" v-slot="{ list }">
         <ul class="flex flex-col">
           <li
@@ -25,7 +25,7 @@
         class="flex justify-center mt-10 mb-20 transition-opacity duration-100 hover:opacity-80"
       >
         <NuxtLink to="/posts" class="flex items-center gap-2"
-          >📚 All Posts
+          >📚 {{ $t("all_posts") }}
           <IconsRight class="w-4" />
         </NuxtLink>
       </div>

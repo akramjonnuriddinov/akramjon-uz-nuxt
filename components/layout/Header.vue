@@ -1,11 +1,11 @@
 <script setup lang="ts">
-const { setLocale } = useI18n()
+const { setLocale, t } = useI18n()
 const links = [
-  { name: "Posts", path: "/posts" },
+  { name: t("posts"), path: "/posts" },
   { name: "TILs", path: "/tils" },
-  { name: "Tags", path: "/tags" },
-  { name: "About", path: "/about" },
-  { name: "Projects", path: "/projects" },
+  { name: t("tags"), path: "/tags" },
+  { name: t("about"), path: "/about" },
+  { name: t("projects"), path: "/projects" },
 ]
 const isMenuOpen = ref(false)
 
@@ -62,7 +62,7 @@ const changeLocale = (event: Event) => {
             to="/search"
           >
             <IconsSearch class="w-5" />
-            <span>Search (⌘K)</span>
+            <span>{{ $t("search") }}</span>
           </NuxtLink>
           <select
             @change="changeLocale"

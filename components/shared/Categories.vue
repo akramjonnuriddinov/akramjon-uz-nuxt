@@ -22,7 +22,7 @@ const categories = [
 
 <template>
   <section class="pb-10">
-    <h2 class="mb-2 text-2xl font-semibold">🏷️ Categories</h2>
+    <h2 class="mb-2 text-2xl font-semibold">🏷️ {{ $t("categories") }}</h2>
     <ul class="flex flex-wrap gap-3">
       <li
         v-for="category in categories"

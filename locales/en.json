@@ -1,4 +1,15 @@
 {
   "welcome": "Welcome",
-  "hi": "👋 Hi there! I'm Akramjon."
+  "hi": "👋 Hi there! I'm Akramjon.",
+  "hero_text": "If you want to get better as a Web Developer, I hope my blog posts will help you.",
+  "social_links": "Social Links",
+  "latest_posts": "Latest Posts",
+  "all_posts": "All Posts",
+  "categories": "Categories",
+  "copyright": "All rights reserved.",
+  "posts": "Posts",
+  "tags": "Tags",
+  "about": "About",
+  "projects": "Projects",
+  "search": "Search (⌘K)"
 }
