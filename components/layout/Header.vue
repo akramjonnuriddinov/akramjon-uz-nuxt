@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { ref } from "vue"
-
+const { setLocale } = useI18n()
 const links = [
   { name: "Posts", path: "/posts" },
   { name: "TILs", path: "/tils" },
@@ -8,8 +7,12 @@ const links = [
   { name: "About", path: "/about" },
   { name: "Projects", path: "/projects" },
 ]
-
 const isMenuOpen = ref(false)
+
+const changeLocale = (event: Event) => {
+  const target = event.target as HTMLSelectElement
+  setLocale(target.value)
+}
 </script>
 
 <template>
@@ -42,7 +45,7 @@ const isMenuOpen = ref(false)
         </button>
 
         <!-- Desktop Menu -->
-        <ul class="hidden md:flex items-center gap-6 font-medium navbar">
+        <ul class="items-center hidden gap-6 font-medium md:flex navbar">
           <li v-for="link in links" :key="link.name">
             <NuxtLink
               :to="link.path"
@@ -53,7 +56,7 @@ const isMenuOpen = ref(false)
         </ul>
 
         <!-- Search and Theme Switcher -->
-        <div class="hidden md:flex items-center">
+        <div class="items-center hidden md:flex">
           <NuxtLink
             class="flex items-center gap-1 ml-auto mr-6 transition-colors duration-100 hover:text-primary-green"
             to="/search"
@@ -61,12 +64,20 @@ const isMenuOpen = ref(false)
             <IconsSearch class="w-5" />
             <span>Search (⌘K)</span>
           </NuxtLink>
+          <select
+            @change="changeLocale"
+            class="mr-6 bg-transparent outline-none dark:bg-primary-dark"
+          >
+            <option value="en">EN</option>
+            <option value="uz">UZ</option>
+            <option value="ru">РУ</option>
+          </select>
           <ThemeSwitcher />
         </div>
       </div>
 
       <!-- Mobile Menu -->
-      <div v-if="isMenuOpen" class="md:hidden mt-4">
+      <div v-if="isMenuOpen" class="mt-4 md:hidden">
         <ul class="flex flex-col gap-4 font-medium navbar">
           <li v-for="link in links" :key="link.name">
             <NuxtLink

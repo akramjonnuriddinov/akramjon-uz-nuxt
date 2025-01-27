@@ -1,7 +1,7 @@
 <template>
   <section class="py-20">
     <LayoutContainer>
-      <h1 class="mb-8 text-4xl font-bold">👋 Hi there! I'm Akramjon.</h1>
+      <h1 class="mb-8 text-4xl font-bold">{{ $t("hi") }}</h1>
       <p class="mb-4">
         If you want to get better as a Web Developer, I hope my blog posts will
         help you.
