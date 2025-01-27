@@ -10,7 +10,7 @@ const links = [
 const isMenuOpen = ref(false)
 
 const changeLocale = (event: Event) => {
-  const target = event.target as HTMLSelectElement
+  const target = event.target as any
   setLocale(target.value)
 }
 </script>
