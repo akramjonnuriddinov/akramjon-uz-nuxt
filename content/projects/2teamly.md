@@ -1,12 +1,12 @@
 ---
 id: 1
-title: "Teamly - Portfolio Website"
+title: "Teamly"
 description: "Teamly is a modern web application"
 published: "12/22/2024"
 ---
 
-**Live Link:** [Teamly](https://teamly.netlify.app/) |
-**Source Code:** [Github](https://github.com/akramjonnuriddinov/teamly-new)
+**Live Link:** [Teamly](https://teamly.uz/) |
+**Source Code(private):** [Github](https://github.com/akramjonnuriddinov/)
 
 ## Overview
 
@@ -15,7 +15,7 @@ published: "12/22/2024"
 ## Features
 
 - **Responsive Design:** Built with **Tailwind CSS**, ensuring a consistent experience across devices.
-- **Dynamic UI Components:** Developed using **Vue.js** for dynamic and interactive user experiences.
+- **Dynamic UI Components:** Developed using **Nuxt.js** for dynamic and interactive user experiences.
 - **Collaboration Tools:** Designed to help teams organize tasks, manage members, and improve productivity.
 - **Fast Performance:** Optimized with lightweight, efficient coding practices for seamless functionality.
 
@@ -23,10 +23,9 @@ published: "12/22/2024"
 
 ### Frontend
 
-- **Vue.js**: Utilized for building a reactive and component-driven user interface.
+- **Nuxt.js**: Utilized for building a reactive and component-driven user interface.
 - **Tailwind CSS**: For responsive and customizable styling.
-- **Firebase**: As a DB.
-- **Netlify**: For easy and quick deployment of the application.
+- **Supabase**: As a DB.
 
 ## Development Process
 
@@ -36,11 +35,11 @@ published: "12/22/2024"
 
 2. **Frontend Implementation:**
 
-   - Developed a responsive layout using **Vue.js** and **Tailwind CSS**.
+   - Developed a responsive layout using **Nuxt.js** and **Tailwind CSS**.
    - Ensured cross-browser compatibility and mobile responsiveness.
 
 3. **Deployment:**
-   - Hosted the project on **Netlify** for rapid deployment and accessibility.
+   - Hosted the project on **Airnet** for rapid deployment and accessibility.
 
-Feel free to explore the live demo and share your feedback!  
-👉 **[Visit Teamly](https://teamly.netlify.app/)**
+Feel free to explore the live demo and share your feedback!
+👉 **[Visit Teamly](https://teamly.uz/)**
