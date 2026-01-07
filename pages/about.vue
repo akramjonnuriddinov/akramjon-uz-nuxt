@@ -27,11 +27,20 @@ useSeoMeta({
         <li
           class="flex items-center last:mb-0 mb-5 gap-4 before:w-1.5 before:h-1.5 before:flex before:rounded-full before:bg-primary-green"
         >
+          <span class="text-primary-green">Vue.js | Laravel Developer</span>
+          <span>|</span>
+          <a href="https://2roomz.ru/" target="_blank">2ROOMZ</a>
+          <span>|</span>
+          <span>2025, June - Present</span>
+        </li>
+        <li
+          class="flex items-center last:mb-0 mb-5 gap-4 before:w-1.5 before:h-1.5 before:flex before:rounded-full before:bg-primary-green"
+        >
           <span class="text-primary-green">Vue.js Developer</span>
           <span>|</span>
           <span>Namangan Engineering-Construction Institute</span>
           <span>|</span>
-          <span>2024, September - Present</span>
+          <span>2024, June - Present</span>
         </li>
         <li
           class="flex items-center last:mb-0 mb-5 gap-4 before:w-1.5 before:h-1.5 before:flex before:rounded-full before:bg-primary-green"
@@ -53,13 +62,13 @@ useSeoMeta({
           class="flex items-center last:mb-0 mb-5 gap-4 before:w-1.5 before:h-1.5 before:flex before:rounded-full before:bg-primary-green"
         >
           <span class="text-primary-green">Language: </span>
-          <span>HTML, CSS, JavaScript, TypeScript, Golang</span>
+          <span>HTML, CSS, JavaScript, TypeScript, Golang, SQL</span>
         </li>
         <li
           class="flex items-center last:mb-0 mb-5 gap-4 before:w-1.5 before:h-1.5 before:flex before:rounded-full before:bg-primary-green"
         >
           <span class="text-primary-green">Frameworks: </span>
-          <span>Vue.js, Nuxt, Tailwind, Firebase</span>
+          <span>Vue.js, Nuxt, Tailwind, Laravel</span>
         </li>
         <li
           class="flex items-center last:mb-0 mb-5 gap-4 before:w-1.5 before:h-1.5 before:flex before:rounded-full before:bg-primary-green"
