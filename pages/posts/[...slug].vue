@@ -1,75 +1,65 @@
 <script setup lang="ts">
-definePageMeta({
-  name: "posts-slug",
-})
+const { path } = useRoute()
+const { data: doc } = await useAsyncData(`content-${path}`, () => queryContent(path).findOne())
 
-const categories = ["Vue", "Golang"]
-
-onMounted(() => {
-  const observer = new MutationObserver(() => {
-    document.querySelectorAll("pre").forEach((block) => {
-      if (!block.querySelector(".copy-btn")) {
-        const button = document.createElement("button")
-        button.innerText = "Copy"
-        button.className = "copy-btn"
-        block.appendChild(button)
-
-        button.addEventListener("click", () => {
-          const code = block.querySelector("code")?.innerText || ""
-          navigator.clipboard.writeText(code).then(() => {
-            button.innerText = "Copied!"
-            setTimeout(() => (button.innerText = "Copy"), 2000)
-          })
-        })
-      }
-    })
-  })
-
-  observer.observe(document.body, { childList: true, subtree: true })
+useHead({
+  title: doc.value?.title || 'Post',
+  meta: [
+    { name: 'description', content: doc.value?.description || '' }
+  ]
 })
 </script>
 
 <template>
-  <div>
-    <main class="py-10 custom-code">
-      <LayoutContainer>
-        <NuxtLink to="/posts" class="flex items-center">
-          <IconsBack class="w-2.5 mr-2" />
-          Go back
-        </NuxtLink>
-        <ContentDoc>
-          <template v-slot="{ doc }">
-            <Head>
-              <Title>{{ doc.title }}</Title>
-              <Meta name="description" :content="doc.description" />
-              <Meta name="keywords" :content="doc.keywords" />
-            </Head>
-            <article>
-              <h1 class="mt-2 text-2xl font-bold">{{ doc.title }}</h1>
-              <div class="flex my-10">
-                <IconsCalendar class="w-4 mr-3" />
-                <time>{{ doc.published }}</time>
+  <div class="container mx-auto px-6 py-24">
+    <div class="max-w-3xl mx-auto">
+      <!-- Back Link -->
+      <NuxtLink to="/posts" class="inline-flex items-center text-sm text-gray-500 hover:text-primary transition-colors mb-8 group">
+        <svg class="w-4 h-4 mr-1 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+        Back to Posts
+      </NuxtLink>
+
+      <ContentDoc>
+        <template #default="{ doc }">
+          <article>
+            <!-- Header -->
+            <header class="mb-12">
+              <div class="flex items-center gap-3 text-sm text-primary font-mono mb-4">
+                <time>{{ doc.date || doc.published }}</time>
+                <span v-if="doc.tags" class="w-1 h-1 bg-primary rounded-full"></span>
+                <span v-if="doc.tags">{{ doc.tags }}</span>
               </div>
+              
+              <h1 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                {{ doc.title }}
+              </h1>
+              
+              <p class="text-xl text-gray-400 leading-relaxed">
+                {{ doc.description }}
+              </p>
+            </header>
+
+            <!-- Content -->
+            <div class="custom-code prose-invert prose-lg max-w-none prose-headings:text-white prose-a:text-primary hover:prose-a:text-primary-dim prose-code:text-accent prose-pre:bg-surface prose-pre:border prose-pre:border-white/5">
               <ContentRenderer :value="doc" />
-            </article>
-          </template>
-          <template #not-found>
-            <h1>Document not found</h1>
-          </template>
-        </ContentDoc>
-      </LayoutContainer>
-    </main>
-    <LayoutContainer>
-      <ul class="flex flex-wrap gap-3 ml-0">
-        <li
-          v-for="category in categories"
-          :key="category"
-          class="px-3 py-1 font-bold text-white rounded-full bg-primary-green selection:bg-transparent selection:text-white"
-        >
-          <NuxtLink to="/" class="whitespace-nowrap">{{ category }}</NuxtLink>
-        </li>
-      </ul>
-      <SharedSharePost />
-    </LayoutContainer>
+            </div>
+          </article>
+        </template>
+        
+        <template #not-found>
+          <div class="text-center py-20">
+            <h1 class="text-4xl font-bold text-white mb-4">Post not found</h1>
+            <NuxtLink to="/posts" class="text-primary hover:underline">Return to blog</NuxtLink>
+          </div>
+        </template>
+      </ContentDoc>
+    </div>
   </div>
 </template>
+
+<style>
+/* Custom prose overrides for code blocks if needed */
+.prose pre {
+  /* @apply rounded-xl backdrop-blur-sm bg-surface/50; */
+}
+</style>

@@ -6,26 +6,50 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    /* animation: appear 0.1s ease-in-out; */
-    scroll-behavior: smooth;
-  }
-
   body {
-    font-family: "Space Mono", "SFMono", "JetBrains Mono", monospace;
+    @apply bg-background text-gray-200 font-sans antialiased overflow-x-hidden;
   }
 
-  ::selection {
-    @apply bg-primary-green/20;
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight text-white;
+  }
+  
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary-dim rounded-full transition-colors hover:bg-primary;
   }
 }
 
-@keyframes appear {
-  0% {
-    opacity: 0;
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
   }
+  
+  .glass {
+    @apply bg-surface/50 backdrop-blur-lg border border-white/5;
+  }
+  
+  .glass-card {
+    @apply bg-surface/40 backdrop-blur-md border border-white/5 rounded-xl transition-all duration-300 hover:bg-surface/60 hover:border-primary/20 hover:shadow-lg hover:shadow-primary/5;
+  }
+}
 
-  100% {
-    opacity: 1;
-  }
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(4px);
+  transform: translateY(10px);
 }

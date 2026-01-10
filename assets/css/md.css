@@ -23,7 +23,7 @@
 }
 
 .copy-btn {
-  @apply absolute px-2 py-1 text-sm text-white rounded cursor-pointer top-2 right-2 bg-primary-green dark:bg-primary-dark;
+  @apply absolute px-2 py-1 text-sm text-white rounded cursor-pointer top-2 right-2 bg-primary;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -66,11 +66,11 @@ html.dark .copy-btn {
 }
 
 .custom-code a {
-  @apply text-primary-green;
+  @apply text-primary;
 }
 
 .custom-code strong {
-  @apply text-primary-dark dark:text-primary-light;
+  @apply text-white;
 }
 
 /* Lists */
@@ -92,12 +92,12 @@ html.dark .copy-btn {
   zoom: 120%;
   font-size: 0.95rem;
   position: relative;
-  @apply bg-white dark:bg-[#252526] text-[#252526] dark:text-[#f8f8f2];
+  @apply bg-[#252526] text-[#f8f8f2];
 }
 
 .custom-code pre {
   position: relative;
-  @apply bg-white dark:bg-[#252526] text-[#252526] dark:text-[#f8f8f2];
+  @apply bg-[#252526] text-[#f8f8f2];
   padding: 0 1.5rem;
   border-radius: 8px;
   overflow-x: auto;

@@ -5,7 +5,7 @@ definePageMeta({
 </script>
 
 <template>
-  <main class="py-10 custom-code">
+  <main class="pt-40 custom-code">
     <LayoutContainer>
       <NuxtLink to="/projects" class="flex items-center">
         <IconsBack class="w-2.5 mr-2" />
