@@ -40,7 +40,7 @@ useSeoMeta({
           <span>|</span>
           <span>Namangan Engineering-Construction Institute</span>
           <span>|</span>
-          <span>2024, June - Present</span>
+          <span>2024, September - 2025, June</span>
         </li>
         <li
           class="flex items-center last:mb-0 mb-5 gap-4 before:w-1.5 before:h-1.5 before:flex before:rounded-full before:bg-primary-green"
