@@ -37,7 +37,7 @@ useSeoMeta({
                    <h4 class="text-lg font-bold text-white">Vue.js | Laravel Developer</h4>
                    <a href="https://2roomz.ru/" target="_blank" class="text-primary hover:underline">2ROOMZ</a>
                  </div>
-                 <span class="text-xs font-mono text-gray-500 bg-surface px-2 py-1 rounded">2025 - Present</span>
+                 <span class="text-xs font-mono text-gray-500 bg-surface px-2 py-1 rounded">Jun, 2025 - Present</span>
                </div>
              </div>
              
@@ -45,9 +45,9 @@ useSeoMeta({
                <div class="flex justify-between items-start mb-2">
                  <div>
                    <h4 class="text-lg font-bold text-white">Vue.js Developer</h4>
-                   <span class="text-gray-400">Namangan Engineering-Construction Institute</span>
+                   <a href="https://namdtu.uz/" target="_blank" class="text-primary hover:underline">Namangan Engineering-Construction Institute</a>
                  </div>
-                 <span class="text-xs font-mono text-gray-500 bg-surface px-2 py-1 rounded">2024 - 2025</span>
+                 <span class="text-xs font-mono text-gray-500 bg-surface px-2 py-1 rounded">Sep, 2024 - Jun, 2025</span>
                </div>
              </div>
 
@@ -55,9 +55,9 @@ useSeoMeta({
                <div class="flex justify-between items-start mb-2">
                  <div>
                    <h4 class="text-lg font-bold text-white">Frontend Developer (Intern)</h4>
-                   <span class="text-gray-400">Teamly</span>
+                   <a href="https://teamly.uz/" target="_blank" class="text-primary hover:underline">Teamly</a>
                  </div>
-                 <span class="text-xs font-mono text-gray-500 bg-surface px-2 py-1 rounded">2023 - 2024</span>
+                 <span class="text-xs font-mono text-gray-500 bg-surface px-2 py-1 rounded">March, 2023 - March, 2024</span>
                </div>
              </div>
           </div>
