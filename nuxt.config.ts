@@ -22,12 +22,12 @@ export default defineNuxtConfig({
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap' }
       ],
-      meta: [
-        { hid: 'description', name: 'description', content: 'Blog website from Vue.js developer' },
-        { hid: 'og:description', property: 'og:description', content: 'Blog website from Vue.js developer' },
-        { hid: 'og:title', property: 'og:title', content: 'Akramjon.N | Vue.js developer' },
-        { hid: 'og:keywords', property: 'og:keywords', content: 'Akramjon.N | Vue.js developer' },
-      ]
+      // meta: [
+      //   { hid: 'description', name: 'description', content: 'Blog website from Vue.js developer' },
+      //   { hid: 'og:description', property: 'og:description', content: 'Blog website from Vue.js developer' },
+      //   { hid: 'og:title', property: 'og:title', content: 'Akramjon.N | Vue.js developer' },
+      //   { hid: 'og:keywords', property: 'og:keywords', content: 'Akramjon.N | Vue.js developer' },
+      // ]
     }
   },
 
