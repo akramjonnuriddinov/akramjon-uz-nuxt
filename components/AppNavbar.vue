@@ -1,78 +1,111 @@
 <template>
-  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-white/10" :class="{ 'bg-background/80 backdrop-blur-md border-b': isScrolled }">
-    <div class="container mx-auto px-6 h-20 flex items-center justify-between">
+  <header class="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 pt-5 pointer-events-none">
+    <div
+      class="pointer-events-auto flex items-center gap-2 px-3 py-2.5 rounded-2xl border transition-all duration-500"
+      :class="isScrolled
+        ? 'border-white/10 bg-surface/80 backdrop-blur-2xl shadow-2xl shadow-black/30'
+        : 'border-white/5 bg-surface/40 backdrop-blur-xl'"
+    >
       <!-- Logo -->
-      <NuxtLink to="/" class="text-2xl font-bold font-mono group">
+      <NuxtLink to="/" class="font-mono font-bold text-sm px-2 py-1 rounded-lg hover:bg-white/5 transition-colors group">
         <span class="text-primary group-hover:text-primary-dim transition-colors">&lt;</span>
-        Akramjon
+        <span class="text-white">AN</span>
         <span class="text-primary group-hover:text-primary-dim transition-colors">/&gt;</span>
       </NuxtLink>
 
-      <!-- Desktop Nav -->
-      <nav class="hidden md:flex items-center gap-8">
-        <NuxtLink 
-          v-for="link in links" 
-          :key="link.path" 
+      <div class="w-px h-4 bg-white/10 mx-1"></div>
+
+      <!-- Desktop Links -->
+      <nav class="hidden md:flex items-center gap-1">
+        <NuxtLink
+          v-for="link in links"
+          :key="link.path"
           :to="link.path"
-          class="text-sm font-medium text-gray-400 hover:text-primary transition-colors relative group py-2"
-          active-class="!text-white"
+          class="px-3 py-1.5 text-sm font-medium text-secondary hover:text-white rounded-lg hover:bg-white/[0.06] transition-all duration-150"
+          active-class="!text-white bg-white/[0.07]"
+          exact-active-class="!text-primary bg-primary/[0.08]"
         >
           {{ link.name }}
-          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full group-[.router-link-active]:w-full"></span>
         </NuxtLink>
-        
-        <!-- Locale Switcher Placeholder (if needed later) -->
-        <!-- <div class="w-px h-4 bg-white/10 mx-2"></div> -->
       </nav>
 
-      <!-- Mobile Menu Button -->
-      <button @click="isMobileMenuOpen = !isMobileMenuOpen" class="md:hidden text-white p-2">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path v-if="!isMobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          <path v-else stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      <div class="hidden md:block w-px h-4 bg-white/10 mx-1"></div>
+
+      <!-- CTA -->
+      <a
+        href="mailto:nn.akramjon@gmail.com"
+        class="hidden md:inline-flex items-center gap-1.5 px-4 py-1.5 bg-primary text-background text-sm font-semibold rounded-xl hover:bg-primary-dim transition-all duration-200 hover:scale-[1.03] active:scale-[0.97]"
+      >
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+        </svg>
+        Hire Me
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button
+        @click="isMobileMenuOpen = !isMobileMenuOpen"
+        class="md:hidden text-secondary hover:text-white p-1.5 rounded-lg hover:bg-white/5 transition-colors ml-1"
+        aria-label="Toggle menu"
+      >
+        <svg class="w-5 h-5 transition-transform duration-200" :class="{ 'rotate-90': isMobileMenuOpen }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path v-if="!isMobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
-
-      <!-- Mobile Menu -->
-      <Transition
-        enter-active-class="transition duration-200 ease-out"
-        enter-from-class="transform opacity-0 -translate-y-2"
-        enter-to-class="transform opacity-100 translate-y-0"
-        leave-active-class="transition duration-150 ease-in"
-        leave-from-class="transform opacity-100 translate-y-0"
-        leave-to-class="transform opacity-0 -translate-y-2"
-      >
-        <div v-if="isMobileMenuOpen" class="absolute top-20 left-0 right-0 bg-surface border-b border-white/5 md:hidden p-4 flex flex-col gap-4 shadow-xl">
-          <NuxtLink 
-            v-for="link in links" 
-            :key="link.path" 
-            :to="link.path"
-            @click="isMobileMenuOpen = false"
-            class="text-gray-300 hover:text-primary py-2 px-4 rounded-lg hover:bg-white/5 transition-colors"
-            active-class="bg-white/5 text-primary"
-          >
-            {{ link.name }}
-          </NuxtLink>
-        </div>
-      </Transition>
     </div>
+
+    <!-- Mobile Menu -->
+    <Transition
+      enter-active-class="transition duration-200 ease-out"
+      enter-from-class="opacity-0 -translate-y-3 scale-95"
+      enter-to-class="opacity-100 translate-y-0 scale-100"
+      leave-active-class="transition duration-150 ease-in"
+      leave-from-class="opacity-100 translate-y-0 scale-100"
+      leave-to-class="opacity-0 -translate-y-3 scale-95"
+    >
+      <div
+        v-if="isMobileMenuOpen"
+        class="pointer-events-auto absolute top-[4.5rem] left-4 right-4 bg-surface/90 backdrop-blur-2xl border border-white/10 rounded-2xl p-3 shadow-2xl shadow-black/40 flex flex-col gap-1"
+      >
+        <NuxtLink
+          v-for="link in links"
+          :key="link.path"
+          :to="link.path"
+          @click="isMobileMenuOpen = false"
+          class="px-4 py-2.5 text-sm font-medium text-secondary hover:text-white rounded-xl hover:bg-white/5 transition-all"
+          active-class="!text-white bg-white/[0.06]"
+          exact-active-class="!text-primary bg-primary/[0.08]"
+        >
+          {{ link.name }}
+        </NuxtLink>
+        <div class="h-px bg-white/[0.06] my-1"></div>
+        <a
+          href="mailto:nn.akramjon@gmail.com"
+          class="px-4 py-2.5 bg-primary text-background text-sm font-semibold rounded-xl text-center hover:bg-primary-dim transition-colors"
+          @click="isMobileMenuOpen = false"
+        >
+          Hire Me
+        </a>
+      </div>
+    </Transition>
   </header>
 </template>
 
 <script setup lang="ts">
-const isScrolled = ref(false);
-const isMobileMenuOpen = ref(false);
+const isScrolled = ref(false)
+const isMobileMenuOpen = ref(false)
 
 const links = [
   { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
   { name: 'Projects', path: '/projects' },
   { name: 'Blog', path: '/posts' },
-];
+]
 
 onMounted(() => {
-  window.addEventListener('scroll', () => {
-    isScrolled.value = window.scrollY > 20;
-  });
-});
+  const handler = () => { isScrolled.value = window.scrollY > 30 }
+  window.addEventListener('scroll', handler, { passive: true })
+  onUnmounted(() => window.removeEventListener('scroll', handler))
+})
 </script>
