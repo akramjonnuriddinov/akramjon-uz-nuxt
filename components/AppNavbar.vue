@@ -33,13 +33,14 @@
 
       <!-- CTA -->
       <a
-        href="mailto:nn.akramjon@gmail.com"
+        href="/Nuriddinov_Akramjon_CV.pdf"
+        target="_blank"
         class="hidden md:inline-flex items-center gap-1.5 px-4 py-1.5 bg-primary text-background text-sm font-semibold rounded-xl hover:bg-primary-dim transition-all duration-200 hover:scale-[1.03] active:scale-[0.97]"
       >
         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
         </svg>
-        Hire Me
+        Resume
       </a>
 
       <!-- Mobile Toggle -->

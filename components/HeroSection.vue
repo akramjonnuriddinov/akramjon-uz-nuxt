@@ -62,7 +62,7 @@
           <span class="text-primary/40 mx-3">·</span>
           Vue.js Specialist
           <span class="text-primary/40 mx-3">·</span>
-          UI Craftsman
+          Full-Stack Developer
         </p>
 
         <!-- Description -->
