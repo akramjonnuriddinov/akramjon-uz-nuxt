@@ -16,6 +16,7 @@ const { data: posts } = await useAsyncData('latest-posts', () =>
 
 const { isVisible: statsVisible, el: statsEl } = useReveal()
 const { isVisible: projectsVisible, el: projectsEl } = useReveal()
+const { isVisible: servicesVisible, el: servicesEl } = useReveal()
 const { isVisible: techVisible, el: techEl } = useReveal()
 const { isVisible: postsVisible, el: postsEl } = useReveal()
 const { isVisible: ctaVisible, el: ctaEl } = useReveal()
@@ -95,6 +96,26 @@ const stats = [
     <!-- Divider -->
     <div class="section-container"><div class="divider"></div></div>
 
+    <!-- Services -->
+    <section
+      ref="servicesEl"
+      class="py-24"
+      :class="servicesVisible ? 'reveal-visible' : 'reveal-hidden'"
+    >
+      <div class="section-container">
+        <SectionTitle
+          number="02 — Services"
+          subtitle="Beyond freelance development, I build complete IT solutions for businesses — from idea to launch and support."
+        >
+          IT Services for Business
+        </SectionTitle>
+        <Services />
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="section-container"><div class="divider"></div></div>
+
     <!-- Tech Stack -->
     <section
       ref="techEl"
@@ -103,7 +124,7 @@ const stats = [
     >
       <div class="section-container">
         <SectionTitle
-          number="02 — Stack"
+          number="03 — Stack"
           subtitle="The tools and technologies I use to bring ideas to life."
         >
           Technical Arsenal
@@ -123,7 +144,7 @@ const stats = [
     >
       <div class="section-container">
         <div class="flex items-end justify-between mb-12 flex-wrap gap-4">
-          <SectionTitle number="03 — Blog" subtitle="Thoughts on frontend development, tech, and the web.">
+          <SectionTitle number="04 — Blog" subtitle="Thoughts on frontend development, tech, and the web.">
             Latest Thoughts
           </SectionTitle>
           <NuxtLink
@@ -191,7 +212,7 @@ const stats = [
               <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400"> great together</span>
             </h2>
             <p class="text-secondary text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-              I'm currently open to freelance projects and full-time opportunities. Let's talk about how I can help.
+              I'm open to freelance projects, full-time opportunities, and IT services for businesses — websites, Telegram bots, CRM systems, mobile apps and more. Let's talk about how I can help.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
               <a href="mailto:nn.akramjon@gmail.com" class="btn-primary">
