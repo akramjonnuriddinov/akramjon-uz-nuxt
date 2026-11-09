@@ -9,15 +9,8 @@ useHead({
 </script>
 
 <template>
-  <div class="section-container py-32">
-    <div class="max-w-3xl mx-auto">
-      <NuxtLink to="/projects" class="inline-flex items-center gap-2 text-sm text-muted hover:text-primary transition-colors mb-10 group">
-        <svg class="w-4 h-4 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-        </svg>
-        Back to Projects
-      </NuxtLink>
-
+  <div class="section-container pb-24 pt-10">
+    <div class="max-w-3xl">
       <ContentDoc>
         <template #default="{ doc }">
           <article>

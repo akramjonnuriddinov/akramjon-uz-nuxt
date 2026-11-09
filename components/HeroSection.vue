@@ -11,8 +11,8 @@
     <div class="hidden lg:block absolute top-1/4 right-[8%] font-mono text-xs text-primary/20 select-none animate-float leading-relaxed">
       <div>const dev = {</div>
       <div>&nbsp;&nbsp;name: "Akramjon",</div>
-      <div>&nbsp;&nbsp;stack: ["Vue", "Nuxt"],</div>
-      <div>&nbsp;&nbsp;passion: "UI/UX"</div>
+      <div>&nbsp;&nbsp;stack: ["Vue", "React", "Laravel", "Go"],</div>
+      <div>&nbsp;&nbsp;ships: "end to end"</div>
       <div>}</div>
     </div>
     <div class="hidden lg:block absolute bottom-1/3 left-[6%] font-mono text-xs text-accent/20 select-none animate-float leading-relaxed" style="animation-delay: 3s;">
@@ -34,7 +34,7 @@
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-60"></span>
             <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
           </span>
-          <span class="text-primary font-mono text-sm tracking-wide">Open to opportunities</span>
+          <span class="text-primary font-mono text-sm tracking-wide">Open to remote roles</span>
         </div>
 
         <!-- Headline -->
@@ -58,11 +58,11 @@
           class="text-xl md:text-2xl text-secondary font-light mb-6 tracking-wide"
           style="animation: slideUp 0.7s ease-out 0.32s both;"
         >
-          Frontend Engineer
-          <span class="text-primary/40 mx-3">·</span>
-          Vue.js Specialist
-          <span class="text-primary/40 mx-3">·</span>
           Full-Stack Developer
+          <span class="text-primary/40 mx-3">·</span>
+          Vue &amp; React
+          <span class="text-primary/40 mx-3">·</span>
+          Laravel &amp; Go
         </p>
 
         <!-- Description -->
@@ -70,8 +70,8 @@
           class="text-base md:text-lg text-muted max-w-2xl mx-auto mb-12 leading-relaxed"
           style="animation: slideUp 0.7s ease-out 0.42s both;"
         >
-          I craft fast, accessible, and beautiful web experiences. Specializing in
-          Vue.js &amp; Nuxt, with a focus on clean code and thoughtful design that users love.
+          I build product features used by 800+ hotels across the EU, UK and Canada —
+          from Vue and React frontends to Laravel APIs, AI voice receptionists and Flutter apps.
         </p>
 
         <!-- CTAs -->
@@ -85,9 +85,9 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
             </svg>
           </NuxtLink>
-          <NuxtLink to="/about" class="btn-ghost">
-            About Me
-          </NuxtLink>
+          <a href="/Akramjon_Nuriddinov_CV.pdf" target="_blank" class="btn-ghost">
+            Download CV
+          </a>
         </div>
 
         <!-- Social links -->

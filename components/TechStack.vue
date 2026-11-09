@@ -33,9 +33,9 @@ const categories = [
     items: [
       { name: 'Vue.js', icon: 'V', color: '#ffffff', bgColor: '#42b883' },
       { name: 'Nuxt', icon: 'N', color: '#ffffff', bgColor: '#00dc82' },
+      { name: 'React', icon: 'R', color: '#ffffff', bgColor: '#149eca' },
       { name: 'TypeScript', icon: 'TS', color: '#ffffff', bgColor: '#3178c6' },
       { name: 'Tailwind', icon: 'TW', color: '#ffffff', bgColor: '#0ea5e9' },
-      { name: 'Figma', icon: 'F', color: '#ffffff', bgColor: '#f24e1e' },
     ],
   },
   {
@@ -43,15 +43,29 @@ const categories = [
     items: [
       { name: 'Laravel', icon: 'L', color: '#ffffff', bgColor: '#ff2d20' },
       { name: 'Go', icon: 'Go', color: '#ffffff', bgColor: '#00add8' },
+      { name: 'PostgreSQL', icon: 'PG', color: '#ffffff', bgColor: '#336791' },
+      { name: 'Redis', icon: 'RD', color: '#ffffff', bgColor: '#d82c20' },
       { name: 'Supabase', icon: 'SB', color: '#ffffff', bgColor: '#3ecf8e' },
-      { name: 'SQL', icon: 'DB', color: '#ffffff', bgColor: '#336791' },
     ],
   },
   {
-    name: 'Tools',
+    name: 'Mobile, Real-time & AI',
     items: [
+      { name: 'Flutter', icon: 'F', color: '#ffffff', bgColor: '#02569b' },
+      { name: 'WebSocket', icon: 'WS', color: '#ffffff', bgColor: '#6d28d9' },
+      { name: 'Twilio Voice', icon: 'TV', color: '#ffffff', bgColor: '#f22f46' },
+      { name: 'ElevenLabs', icon: 'XI', color: '#ffffff', bgColor: '#27272a' },
+      { name: 'Gemini API', icon: 'G', color: '#ffffff', bgColor: '#4285f4' },
+    ],
+  },
+  {
+    name: 'DevOps',
+    items: [
+      { name: 'Docker', icon: 'D', color: '#ffffff', bgColor: '#2496ed' },
+      { name: 'Nginx', icon: 'NX', color: '#ffffff', bgColor: '#009639' },
+      { name: 'GitHub Actions', icon: 'GA', color: '#ffffff', bgColor: '#2088ff' },
+      { name: 'Linux', icon: 'LX', color: '#ffffff', bgColor: '#3f3f46' },
       { name: 'Git', icon: 'G', color: '#ffffff', bgColor: '#f05032' },
-      { name: 'VS Code', icon: '{}', color: '#ffffff', bgColor: '#007acc' },
     ],
   },
 ]

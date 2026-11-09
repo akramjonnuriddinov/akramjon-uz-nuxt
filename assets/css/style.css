@@ -6,8 +6,18 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
   body {
-    @apply bg-background text-gray-200 font-sans antialiased overflow-x-hidden;
+    @apply bg-background text-secondary font-sans antialiased overflow-x-hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -109,7 +119,7 @@
   }
 
   .section-container {
-    @apply container mx-auto px-6;
+    @apply mx-auto max-w-screen-xl px-6 md:px-12 lg:px-24;
   }
 
   .divider {
@@ -119,14 +129,12 @@
 
 .page-enter-active,
 .page-leave-active {
-  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.15s ease;
 }
 
 .page-enter-from,
 .page-leave-to {
   opacity: 0;
-  filter: blur(5px);
-  transform: translateY(10px);
 }
 
 @keyframes gradient-text {

@@ -18,7 +18,7 @@
         </div>
 
         <!-- Date badge -->
-        <div class="absolute top-3 right-3 px-2.5 py-1 rounded-lg bg-surface/80 backdrop-blur-sm border border-white/[0.06] font-mono text-[11px] text-muted">
+        <div v-if="date" class="absolute top-3 right-3 px-2.5 py-1 rounded-lg bg-surface/80 backdrop-blur-sm border border-white/[0.06] font-mono text-[11px] text-muted">
           {{ date }}
         </div>
       </div>
@@ -36,7 +36,10 @@
         <div class="flex items-center justify-between mt-4 pt-4 border-t border-white/[0.05]">
           <div class="flex items-center gap-1.5 flex-wrap">
             <slot name="tags">
-              <span class="tag">View Project</span>
+              <template v-if="tags?.length">
+                <span v-for="tag in tags.slice(0, 3)" :key="tag" class="tag">{{ tag }}</span>
+              </template>
+              <span v-else class="tag">View Project</span>
             </slot>
           </div>
           <span class="flex items-center gap-1 text-xs text-primary font-medium opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
@@ -57,6 +60,7 @@ const props = defineProps<{
   description: string
   date?: string
   path: string
+  tags?: string[]
 }>()
 
 const initial = computed(() => props.title?.charAt(0).toUpperCase() || '#')

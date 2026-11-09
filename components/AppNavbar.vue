@@ -33,7 +33,7 @@
 
       <!-- CTA -->
       <a
-        href="/Nuriddinov_Akramjon_CV.pdf"
+        href="/Akramjon_Nuriddinov_CV.pdf"
         target="_blank"
         class="hidden md:inline-flex items-center gap-1.5 px-4 py-1.5 bg-primary text-background text-sm font-semibold rounded-xl hover:bg-primary-dim transition-all duration-200 hover:scale-[1.03] active:scale-[0.97]"
       >

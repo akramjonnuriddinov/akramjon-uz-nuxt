@@ -1,53 +1,44 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'Projects | Akramjon Nuriddinov',
-  description: 'A showcase of my recent work and open source contributions.',
+  description: 'Case studies: hotel SaaS features used by 800+ hotels, AI products and web apps by Akramjon Nuriddinov.',
 })
 
 const { data: projects } = await useAsyncData('all-projects', () =>
   queryContent('projects').sort({ id: -1 }).find()
 )
-
-const { isVisible, el } = useReveal()
 </script>
 
 <template>
-  <div class="section-container py-32">
-    <!-- Page header -->
-    <div class="max-w-3xl mb-16" style="animation: slideUp 0.7s ease-out both;">
-      <div class="font-mono text-xs text-primary/60 tracking-[0.2em] uppercase mb-4">My Work</div>
-      <h1 class="text-5xl md:text-6xl font-bold text-white mb-5 leading-tight">
-        Projects &
-        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400"> Case Studies</span>
-      </h1>
-      <p class="text-xl text-secondary leading-relaxed">
-        A collection of projects I've built to solve real-world problems, from full-stack web apps to open source tooling.
-      </p>
-    </div>
+  <div class="section-container pb-24 pt-6">
+    <h1 class="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">All Projects</h1>
 
-    <!-- Projects grid -->
-    <div
-      ref="el"
-      class="grid md:grid-cols-2 lg:grid-cols-3 gap-5"
-      :class="isVisible ? 'reveal-visible' : 'reveal-hidden'"
-    >
-      <AppProjectCard
-        v-for="(project, i) in projects"
-        :key="project._path"
-        :title="project.title || 'Untitled'"
-        :description="project.description || ''"
-        :path="project._path || '/'"
-        :date="project.published || project.date || ''"
-        :style="{ transitionDelay: `${i * 60}ms` }"
-      />
-    </div>
-
-    <!-- Empty state -->
-    <div v-if="!projects?.length" class="text-center py-24 text-muted">
-      <svg class="w-12 h-12 mx-auto mb-4 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/>
-      </svg>
-      <p class="text-sm">No projects yet.</p>
-    </div>
+    <table class="mt-12 w-full border-collapse text-left">
+      <thead class="sticky top-0 z-10 border-b border-white/10 bg-background/75 backdrop-blur">
+        <tr>
+          <th class="py-4 pr-8 text-sm font-semibold text-foreground">Project</th>
+          <th class="hidden py-4 pr-8 text-sm font-semibold text-foreground lg:table-cell">Built with</th>
+          <th class="hidden py-4 text-sm font-semibold text-foreground sm:table-cell">Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="project in projects" :key="project._path" class="border-b border-white/5 last:border-none">
+          <td class="py-4 pr-8 align-top">
+            <NuxtLink :to="project._path" class="font-semibold leading-snug text-foreground transition-colors hover:text-primary focus-visible:text-primary">
+              {{ project.title }}
+            </NuxtLink>
+            <p class="mt-1 max-w-xl text-sm leading-normal">{{ project.description }}</p>
+          </td>
+          <td class="hidden py-4 pr-8 align-top lg:table-cell">
+            <SiteTags :tags="project.tags" />
+          </td>
+          <td class="hidden whitespace-nowrap py-4 align-top text-sm sm:table-cell">
+            <a v-if="project.url" :href="project.url" target="_blank" rel="noreferrer noopener" class="transition-colors hover:text-primary focus-visible:text-primary">
+              {{ hostname(project.url) }} ↗
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>

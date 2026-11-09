@@ -16,11 +16,12 @@ module.exports = {
                 mono: ['JetBrains Mono', 'monospace'],
             },
             colors: {
-                background: "#050509",
+                background: "#0a100e",
+                foreground: "#e8f0ec",
                 surface: {
-                    DEFAULT: "#0d0d16",
-                    2: "#131322",
-                    3: "#191932",
+                    DEFAULT: "#101815",
+                    2: "#16211d",
+                    3: "#1d2b26",
                 },
                 primary: {
                     DEFAULT: "#00dc82",
@@ -32,8 +33,8 @@ module.exports = {
                     dim: "#6366f1",
                     glow: "rgba(129, 140, 248, 0.2)",
                 },
-                secondary: "#94a3b8",
-                muted: "#4b5563",
+                secondary: "#a3b1ac",
+                muted: "#7b8a84",
             },
             animation: {
                 'fade-in': 'fadeIn 0.7s ease-out forwards',
