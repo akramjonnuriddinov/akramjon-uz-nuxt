@@ -2,7 +2,7 @@ export const profile = {
   name: 'Akramjon Nuriddinov',
   role: 'Full-Stack Developer',
   tagline: 'I build product features used by 800+ hotels across the EU, UK and Canada.',
-  status: 'Open to remote roles',
+  status: 'Vue.js | Laravel | GO',
   email: 'nn.akramjon@gmail.com',
   cv: '/Akramjon_Nuriddinov_CV.pdf',
 }
